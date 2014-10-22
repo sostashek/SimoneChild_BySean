@@ -1,0 +1,681 @@
+/*
+
+Theme Name: Simone Child
+Description: Child of Simone, designed for seanostashek.com
+Author: Sean Ostashek
+Version: 0.0.1
+Template: simone
+
+Thank you to Morten Rand-Hendriksen for providing a great theme for me to build on.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+0.0 - Child Additions
+1.0 - Reset
+2.0 - Typography
+3.0 - Elements
+4.0 - Forms
+5.0 - Navigation
+	5.1 - Links
+	5.2 - Menus
+6.0 - Accessibility
+7.0 - Alignments
+8.0 - Clearings
+8.5 - Header
+9.0 - Widgets
+10.0 - Content
+	10.1 - Posts and pages
+        10.2 - Index and Archives
+	10.3 - Asides
+        10.4 - Image Attachments
+	10.5 - Comments
+        10.6 - Author Box
+11.0 - Infinite scroll
+12.0 - Media
+13.0 - Footer
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+0.0 - Child Additions
+--------------------------------------------------------------*/
+@import url('../simone/style.css');
+
+.page { background: #eafcf4; }
+
+::-moz-selection {
+    color: #555;
+    color: hsl(0, 0%, 30%);
+    background: #FFF;
+    background: hsl(0, 0%, 100%);
+}
+::selection {
+    color: #555;
+    color: hsl(0, 0%, 30%);
+    background: #FFF;
+    background: hsl(0, 0%, 100%);
+}
+
+#content { background-color: #eafcf4; }
+
+/* WORKING CODE */
+
+
+
+
+
+
+/*--------------------------------------------------------------
+1.0 - Reset
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+    font-size: 21px;
+    font-size: 2.1rem;
+    font-family: 'karla' , sans-serif;
+    line-height: 1.5;
+    color: #080808;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    clear: right;
+    font-weight: 700;
+    font-family: 'quicksand' , sans-serif;
+    color: #000;
+    color: hsl(0, 0%, 0%);
+    -ms-word-break: break-word;
+    word-break: break-word;
+}
+
+code, kbd, tt, var, pre { font-family: 'Inconsolata', monospace; }
+
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    padding: 0.73em 1em;
+    padding: 22px 30px;
+    font-size: 17px;
+    font-size: 1.7rem;
+    font-family: 'Quicksand', 'sans-serif';
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    line-height: 1.3;
+    color: #3c3c3c;
+    background-color: #FFF;
+    border-bottom: 4px;
+    border-style: none;
+    border-color: #3c3c3c ;
+    border-radius: 0px;
+    
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+    background: #3c3c3c;
+    color: #eafcf4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+    padding: 1rem 1rem 1rem 2rem;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    border: 0px none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    background-color: #F5FFFA;
+    color: #3c3c3c;
+    font-family: 'karla' , sans-serif;
+}
+
+input[type="password"],
+input[type="search"]
+{
+    background-color: #3C3C3C;
+    color: #FFF;
+    color: hsl(100, 100%, 100%);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+textarea {
+    background: #FFF;
+    color: #000;
+}
+
+input[type="password"]:focus,
+input[type="search"]:focus
+{
+    color: #EAFCF4;
+}
+
+input[type="text"]::selection ,
+input[type="email"]::selection ,
+input[type="url"]::selection ,
+textarea {
+    background: #EAFCF4;
+    color: #000;
+}
+
+input[type="text"]::-moz-selection ,
+input[type="email"]::-moz-selection ,
+input[type="url"]::-moz-selection ,
+textarea {
+    background: #EAFCF4;
+    color: #000;
+}
+
+input[type="password"]:focus,
+input[type="search"]:focus
+{
+    color: #EAFCF4;
+}
+
+#comment {
+    background-color: #F5FFFA;
+    color: #3c3c3c;
+    font-family: 'karla' , sans-serif;
+}
+
+#comment:focus {
+    background-color: #FFF;
+    color: #000;
+}
+
+#comment::selection {
+    background: #EAFCF4;
+    color: #000;
+}
+
+#comment::-moz-selection {
+    background: #EAFCF4;
+    color: #000;
+}
+
+
+.comment-awaiting-moderation { /* Green background color to make moderation seem less aggressive */
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    letter-spacing: 0.3rem;
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #84bd68;
+    background: hsl(100, 39%, 57%);
+    border-radius: 7px;
+}
+
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+.main-navigation {
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-family: 'quicksand', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    background: #212121;
+    background: hsl(0, 0%, 19%);
+}
+
+.main-navigation ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.main-navigation li {
+    position: relative;
+    float: right;
+    
+}
+
+.main-navigation a {
+    display: block;
+    padding: 1.3em 1.8em;
+    font-size: 17px;
+    font-size: 1.7rem;
+    text-decoration: none;
+    line-height: 1.3em;
+    color: #eafcf4;
+}
+
+.main-navigation ul ul {
+    position: absolute;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    float: left;
+    padding: 0;
+    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);
+}
+
+.main-navigation ul ul ul {
+    top: 0;
+    left: 100%;
+}
+
+.main-navigation ul ul a { width: 200px; }
+
+.main-navigation ul ul li { }
+
+.main-navigation li > a {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-navigation li:hover > a,
+.main-navigation li > a:focus {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #232323;
+    background: hsl(0, 0%, 14%);
+}
+
+.main-navigation ul ul :hover > a { }
+
+.main-navigation ul ul a:hover,
+.main-navigation ul ul a:focus {
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+}
+
+.main-navigation ul li:hover > ul { display: block; }
+
+.main-navigation .current_page_item > a,
+.main-navigation .current-menu-item > a,
+.main-navigation .current_page_item > a:hover,
+.main-navigation .current-menu-item > a:hover,
+.main-navigation .current_page_item > a:focus,
+.main-navigation .current-menu-item > a:focus {
+    color: #313131;
+    color: hsl(0, 0%, 19%);
+    background: #eafcf4;
+}
+
+.main-navigation .current_page_ancestor {
+    background: #4d4d4d;
+    background: hsl(0, 0%, 30%);
+}
+
+.main-navigation ul ul .current_page_parent,
+.main-navigation .current_page_parent .current_page_item > a {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+        padding: 0;
+        font-size: 17px;
+        font-size: 1.7rem;
+        font-weight: 700;
+        text-decoration: none;
+        line-height: 1.3em;
+        color: #eafcf4;
+        text-align: center;
+    }
+    
+    .menu-toggle a {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+    .menu-toggle a:hover,
+    .menu-toggle a:focus {
+        color: #fff;
+        color: hsl(0, 0%, 100%);
+        background: #232323;
+        background: hsl(0, 0%, 14%);
+        -webkit-box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+        -moz-box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+        box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+    }
+
+    .main-navigation.toggled .nav-menu {
+        display: block;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-bottom-color: #000; 
+        border-bottom-color: hsla(0, 0%, 0%, .5);
+        border-top-color: #fff;
+        border-top-color: hsla(0, 0%, 100%, .5);
+    }
+
+    .main-navigation ul {
+        display: none;
+        padding-left: 0;
+    }
+
+    .main-navigation li { float: none; }
+
+    .main-navigation li a { padding: 1.3em 2em; }
+
+    .main-navigation li li a { padding-left: 4em; }
+
+    .main-navigation li li li a { padding-left: 6em; }
+
+    .main-navigation li:hover > a,
+    .main-navigation li > a:focus {
+        color: #fff;
+        color: hsl(0, 0%, 100%);
+        background: #232323;
+        background: hsl(0, 0%, 14%);
+    }
+
+    .main-navigation ul ul,
+    .main-navigation ul ul ul {
+        position: relative;
+        top: inherit;
+        left: 0;
+        display: block;
+        float: none;
+        background: #313131;
+        background: hsl(0, 0%, 19%);
+    }
+
+    .main-navigation ul ul a { width: 100%; }
+
+    .main-navigation ul a:hover,
+    .main-navigation ul ul a:hover,
+    .main-navigation ul a:focus,
+    .main-navigation ul ul a:focus{
+        color: #fff;
+        color: hsl(0, 0%, 100%);
+        background: #232323;
+        background: hsl(0, 0%, 14%);
+        -webkit-box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+        -moz-box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+        box-shadow: inset 0px 3px 7px 0px rgba(12,15,14,0.28);
+    }
+
+    .main-navigation .current_page_ancestor { background: inherit; }
+
+    .main-navigation ul ul .current_page_parent {
+        color: inherit;
+        background: inherit;
+    }
+
+    .main-navigation .current_page_item > a,
+    .main-navigation .current_page_item > a:hover,
+    .main-navigation .current_page_item li:hover,
+    .main-navigation .current_page_item > a:focus,
+    .main-navigation .current_page_item li:focus,
+    .main-navigation .current_page_parent .current_page_item > a  {
+        color: #313131;
+        color: hsl(0, 0%, 19%);
+        background: #eafcf4;
+    }
+
+} /* End responsive menu */
+
+
+/*--------------------------------------------------------------
+5.1 Links
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+5.2 Menus
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+8.5 Header
+--------------------------------------------------------------*/
+.site-branding {
+    padding: 4rem 0;
+    text-align: center;
+    background: #212121;
+}
+
+
+/* Header search */
+
+.search-toggle {
+    float: left;
+    width: 66px;
+    height: 66px;
+    padding: 18px;
+    margin-right: 20px;
+    color: #EAFCF4;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background-color 0.4s ease;
+    -moz-transition: background-color 0.4s ease;
+    -o-transition: background-color 0.4s ease;
+    transition: background-color 0.4s ease;
+}
+
+.search-toggle:hover {
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #232323;
+    background: hsl(0, 0%, 14%);
+}
+.search-toggle.active {
+    color: #313131;
+    color: hsl(0, 0%, 19%);
+    background: #EAFCF4;
+}
+
+.search-box {
+    padding: 0.8em;
+    background: #EAFCF4;
+}
+
+.search-box .search-field {
+    max-width: 300px;
+    float: right;
+    padding: 0.7rem 1rem 0.7rem 1.3rem;
+    font-size: 20px;
+    font-size: 2rem;
+    color: #3F3F3F;
+    background-color: #F5FFFA;
+    border: 0;
+}
+.search-box .search-field:focus {
+    color: #000;
+    background-color: #FFF;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.footer-widgets .widget-title,
+.footer-widgets .widget a:hover,
+.footer-widgets .widget a:focus {
+    color: #EAFCF4;
+    border-color: #EAFCF4;
+}
+
+.widget {
+    margin: 0 0 4em;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 1.6rem;
+}
+
+.widget-title {
+    margin-bottom: 1em;    
+    font-size: 24px;
+    font-size: 2.4rem;  
+    border-bottom: none;
+}
+
+.widget a {
+    font-weight: 400;
+    color: #000;
+    border-bottom: none;
+    text-decoration: none;
+}
+.widget a:hover,
+.widget a:focus {
+    font-weight: 400;
+    border-bottom: 1px solid #FFF;
+}
+
+
+/*--------------------------------------------------------------
+10.0 Content
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+10.1 Posts and pages
+--------------------------------------------------------------*/
+.entry-content a {
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.entry-content a:hover {
+    color: #3C3C3C;
+    border-bottom-color: #FFF;
+}
+
+
+/*--------------------------------------------------------------
+10.2 Index and Archive
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+10.3 Asides
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+10.4 Image Attachments
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+10.5 Comments
+--------------------------------------------------------------*/
+.bypostauthor > .comment-body {
+    background-color: #EAFCF4;
+}
+
+
+/*--------------------------------------------------------------
+10.6 Author Box
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+11.0 Infinite scroll
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+12.0 Media
+--------------------------------------------------------------*/
+.wp-caption-text { text-align: left; }
+
+.wp-caption .wp-caption-text,
+.gallery-caption {
+    padding: 0.85em 0em;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-family: 'Karla', sans-serif;
+    background: #EAFCF4;
+}
+
+/* Featured Images */
+
+.single-post-thumbnail {
+    background: none;
+    background-color: #EAFCF4; }
+
+.front-index-thumbnail { margin-bottom: -3.2em; }
+
+
+/*--------------------------------------------------------------
+13 Footer
+--------------------------------------------------------------*/
+.site-footer {
+    padding: 2em;
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: 'Karla';
+    color: #fff;
+    color: hsl(0, 0%, 100%);
+    background: #313131;
+    background: hsl(0, 0%, 19%);
+}
+
+.site-footer a,
+.site-info {
+    color: #EAFCF4;
+}
+
